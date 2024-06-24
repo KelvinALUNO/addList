@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<input lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicioLista</title>
+</head>
+<body>
+    <h1>addItenList</h1>
+    <ul>
+        <li>front</li>
+        <li>backend</li>
+        <li>full stack</li>
+    </ul>
+    <input>
+    <button onclick="adicionar()">adicionar</button>
+    <script>
+        function adicionar() {
+            const ul = document.querySelector("ul")
+            const li = document.createElement("li")
+            const input = document.querySelector("input")
+            const tarefa = input.value
+            li.innerText = tarefa
+            ul.appendChild(li)
+            input.value = ""
+        }
+
+    </script>
+</body>
+</html>
